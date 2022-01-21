@@ -1,38 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+* {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#header {
+  height: 70px;
+  background-color: #212A31;
+  color: white;
+  font-size: 34px;
+  display: flex;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#header p {
+  margin-left: 10%;
+  font-weight: bold;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.item-card {
+  border: 6px #212A31 solid;
+  width: 24%;
+  height: 160px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+h1 {
+  font-size: 26px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.item-card p {
+  margin: 2px 0px;
+}
+#countries-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#sort-button {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 40px;
+  margin: 20px 0px;
+  border: 4px solid #212A31;
+  background-color: white;
+  border-radius: 10px;
+}
+#sort-button:active {
+  transform: scale(0.97);
+}
+#sort-button:hover {
+  background-color: #212A31;
   color: white;
+  transition: 0.2s;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1024px) {
+  .item-card {
+    width: 30%;
+    font-size: 16px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 425px) {
+  .item-card {
+    width: 40%;
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 20px;
   }
 }
