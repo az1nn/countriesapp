@@ -12,6 +12,10 @@
   <li>Ordenar os países de forma alfabética</li>
 </ul>
 
+<h3> Acesso: </h3>
+
+<a href='https://countriesappaz1nn.herokuapp.com/'>Heroku</a>
+
 <h3>Imagens:</h3>
 
 <img src="/docs/screen.png" width="50%"></img>
